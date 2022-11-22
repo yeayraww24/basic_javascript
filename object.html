@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* //lesson 31
+        var person = {
+           name : 'Dira',
+           age : 17,
+           favcolor : 'white'
+        }
+        console.log(person.name)
+        console.log(person['name']) 
+
+        //lesson 32
+        function person(name, age, favcolor)
+        {
+        this.name = name,
+        this.age = age,
+        this.favcolor = favcolor
+        }
+        var p1 = new person('bae', 16, 'black')
+        var p2 = new person('dira', 17, 'white')
+
+        document.write(p2['name'])
+        document.write(p1.name)
+
+        var k1 = new person('siayah', 45, 'black')
+        var k2 = new person('sibunda', 36, 'white')
+        var k3 = new person('sikakak', 17, 'red')
+        var k4 = new person('siadik', 12, 'white')
+
+        document.write(k1.age)
+
+    // lesson 35 method
+    function person(name,age)
+    {
+        this.name = name,
+        this.age = age,
+        this.changeName = function changeName(name){
+            this.name = name
+        }
+    }
+
+    var p1 = new person('dira', 18)
+    console.log(p1.name)
+    p1.changeName('tedi')
+    console.log(p1.name)
+
+    // lesson 35 method
+    function person(age)
+    {
+        this.age = age,
+        this.changeage = function changeage(age){
+            this.age = age
+        }
+    }
+
+    var p1 = new person(18)
+    console.log(p1.age)
+    p1.changeage(19)
+    console.log(p1.age)
+
+    //lesson 42
+    var name = prompt("Masukan Nama Anda","")
+    function myAleart(){
+
+        alert("Welcome "+name);
+    }
+    setInterval(myAleart, 4000)*/
+
+    //lesson 42
+    function printlTime(){
+        var d = new Date()
+        var hours = d.getHours()
+        var minutes = d.getMinutes()
+        var secs = d.getSeconds()
+    document.body.innerHTML = hours+' : '+ minutes+' : '+secs;
+    }
+    setInterval(printlTime, 4000)
+
+    //lesson 42
+    function getWeekDay(year,month,day,){
+    var names = ["sunday,saturday,friday,thursday,wednesday,tuesday,monday"];
+    var d = new Date();
+    var year = d.getFullYear()
+    var month = d.getMonth()
+document.body.innerHTML = day+' / '+ month+' / '+year;
+    }
+    setInterval(getWeekDay, 4000)
+</script>
+</body>
+</html>
